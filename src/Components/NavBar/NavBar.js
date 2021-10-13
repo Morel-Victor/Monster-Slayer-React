@@ -3,14 +3,25 @@ import { menuItems } from './MenuItems'
 import './NavBar.css';
 
 class NavBar extends Component {
+
+    state = { clicked: false }
+
+    handleClick = () => {
+        this.setState({ clicked: !this.state.clicked })
+    }
+
     render() {
         return(
             <nav className="navBarItems">
-                <h1 className="navBarLogo"><i className="fas fa-bars"></i>Monster Slayer</h1>
-                <div className="menuIcon">
-                    
+                <h1 className="navBarTitle">
+                    <img className="hydreLeft" src='../../Assets/Hydre2.png' alt=""/>
+                    <p>Monster Slayer</p>
+                    <img className="hydreRight" src='../../Assets/Hydre.png' alt=""/>
+                </h1>
+                <div className="menuIcon" onClick={this.handleClick}>
+                    <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
-                <ul>
+                <ul className={this.state.clicked ? 'navLinks active' : 'navLinks'}>
                     {menuItems.map((item, index) => {
                         return (
                             <li key={index}> 

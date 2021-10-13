@@ -6,7 +6,11 @@
 }
 
 .App {
-  background-color: #4c576d;
+  background-image: url(./Assets/attack2.gif);
   min-height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
