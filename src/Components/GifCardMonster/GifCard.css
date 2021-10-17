@@ -1,0 +1,28 @@
+.card {
+    width:380px;
+    display: block;
+    margin: 60px auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 5px;
+    background-color: rgba(51, 51, 51, 1) ;
+}
+
+.card-header {
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+}
+
+.card-image {
+    width: 90%;
+}
+
+.card-title {
+    padding-bottom: 5px;
+}
+
+.ProgressBar {
+    margin: auto;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
